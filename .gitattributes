@@ -1,0 +1,14 @@
+phylogenetic_dating/logs/CRC01_no_singletons_recode.log filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/logs/CRC07_no_singletons_recode.log filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/logs/CRC08_no_singletons_recode.log filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/logs/CRC09_no_singletons_recode.log filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/logs/CRC12_no_singletons_recode.log filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/logs/CRC13_no_singletons_recode.log filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/logs/CRC14_no_singletons_recode.log filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/trees/CRC08_no_singletons_recode.trees filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/trees/CRC09_no_singletons_recode.trees filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/trees/CRC12_no_singletons_recode.trees filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/trees/CRC13_no_singletons_recode.trees filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/trees/CRC14_no_singletons_recode.trees filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/trees/CRC01_no_singletons_recode.trees filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/trees/CRC07_no_singletons_recode.trees filter=lfs diff=lfs merge=lfs -text
