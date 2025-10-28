@@ -12,7 +12,6 @@ Model and parameters:
 * GT16 substitution model frequency prior pi ~ Dirichlet(3, 3, ..., 3)
 * GT16 substitution model rates prior rates ~ Dirichlet(1, 2, 1, 1, 2, 1)
 
-
-Operators:
-UpDownOperator with up = healthy clock, tumor clock and down = tree
-UpDownOperator with up = healthy clock, tumor clock and down = tree, popSizes
+Additional operators:
+* UpDownOperator with up = healthy clock, tumor clock and down = tree
+* UpDownOperator with up = healthy clock, tumor clock and down = tree, popSizes
