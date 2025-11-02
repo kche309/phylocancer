@@ -149,7 +149,7 @@ required="BEAST.base v2.7.4:BEASTLabs v2.0.0:phylonco v0.0.8" version="2.7">
       <parameter id="popSizes" spec="parameter.RealParameter" dimension="4" name="stateNode">0.5 0.5 0.5 0.5</parameter>
       <parameter id="error.delta" lower="0.0" upper="1.0" spec="parameter.RealParameter" name="stateNode">0.1</parameter>
       <parameter id="error.epsilon" lower="0.0" upper="1.0" spec="parameter.RealParameter" name="stateNode">0.01</parameter>
-      <parameter id="relativeGeoRates.s:location" spec="parameter.RealParameter" name="stateNode">1.0 1.0 1.0 0.0 0.0 0.0 1.0 1.0 1.0 0.0 0.0 0.0 1.0 1.0 1.0 0.0 0.0 0.0 1.0 1.0 1.0 0.0 0.0 0.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0</parameter>
+      <parameter id="relativeGeoRates.s:location" spec="parameter.RealParameter" name="stateNode">1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0</parameter>
       <parameter id="traitClockRate.c:location" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
     </state>
     <init id="RandomTree" spec="RandomTree" estimate="false" initial="@Tree" taxa="@alignment">
@@ -276,6 +276,7 @@ required="BEAST.base v2.7.4:BEASTLabs v2.0.0:phylonco v0.0.8" version="2.7">
              PT-PT3-Cell2=PT-PT3</traitSet>
            <userDataType id="traitDataType.location" spec="beast.base.evolution.datatype.UserDataType" codeMap="Met-L=0,Met-L-LN=1,Met-P-LN1=2,Met-P-LN2=3,PT-PT1=4,PT-PT2=5,PT-PT3=6,? = 0 1 2 3 4 5 6 " codelength="-1" states="7"/>
          </data>
+         <rootFrequencies id="rootFreqs" spec="Frequencies" frequencies="0.000000000000 0.0000000000000 0.0000000000000 0.0000000000000 0.3333333333333 0.3333333333333 0.33333333333333"/>
          <siteModel id="geoSiteModel.s:location" spec="SiteModel" gammaCategoryCount="1">
            <parameter id="mutationRate.s:location" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
            <parameter id="gammaShape.s:location" spec="parameter.RealParameter" estimate="false" name="shape">1.0</parameter>
