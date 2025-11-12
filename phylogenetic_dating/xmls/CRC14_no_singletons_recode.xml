@@ -166,15 +166,6 @@ required="BEAST.base v2.7.4:BEASTLabs v2.0.0:phylonco v0.0.8:flc v1.2.0" version
           </distr>
         </distribution>
 
-        <!-- clock constraint healthy rate must be equal or lower than tumour rate -->
-        <prior id="ClockPrior" name="distribution">
-            <x spec="beast.base.inference.util.RPNcalculator" expression="clockRate.tumour clockRate.healthy -">
-                <parameter idref="clockRate.tumour"/>
-                <parameter idref="clockRate.healthy"/>
-            </x>
-            <Uniform name="distr" lower="0.0" upper="Infinity"/>
-        </prior>
-
         <!-- tumour monophyletic clade -->
 <distribution id="tumour.prior" monophyletic="true" spec="beast.base.evolution.tree.MRCAPrior" tree="@Tree">
 	<taxonset id="taxonset.tumour" spec="TaxonSet">
@@ -371,7 +362,7 @@ required="BEAST.base v2.7.4:BEASTLabs v2.0.0:phylonco v0.0.8:flc v1.2.0" version
     <!-- GT16 error model operators -->
     <operator id="deltaScaler" spec="ScaleOperator" scaleFactor="0.8" weight="0.1" parameter="@error.delta"/>
     <operator id="epsilonScaler" spec="ScaleOperator" scaleFactor="0.15" weight="1.0" parameter="@error.epsilon"/>
-    <logger id="tracelog" spec="Logger" fileName="CRC14_no_singletons_withoutFCell3_clockConstraint_recode.$(seed).log" logEvery="2500" model="@posterior" sanitiseHeaders="true" sort="smart">
+    <logger id="tracelog" spec="Logger" fileName="CRC14_no_singletons_withoutFCell3_recode.$(seed).log" logEvery="2500" model="@posterior" sanitiseHeaders="true" sort="smart">
       <log idref="posterior"/>
       <log idref="likelihood"/>
       <log idref="prior"/>
@@ -396,10 +387,10 @@ required="BEAST.base v2.7.4:BEASTLabs v2.0.0:phylonco v0.0.8:flc v1.2.0" version
       <log idref="clockRate.healthy"/>
       <log idref="clockRate.tumour"/>
     </logger>
-    <logger id="treelog" spec="Logger" fileName="CRC14_no_singletons_withoutFCell3_clockConstraint_recode.$(seed).tree" logEvery="2500" mode="tree">
+    <logger id="treelog" spec="Logger" fileName="CRC14_no_singletons_withoutFCell3_recode.$(seed).tree" logEvery="2500" mode="tree">
       <log id="TreeWithMetaDataLogger" spec="beast.base.evolution.TreeWithMetaDataLogger" tree="@Tree"/>
     </logger>
-    <logger id="substitutionTreelog" fileName="CRC14_no_singletons_withoutFCell3_clockConstraint_recode.$(seed).tree.subst" logEvery="2500" mode="tree">
+    <logger id="substitutionTreelog" fileName="CRC14_no_singletons_withoutFCell3_recode.$(seed).tree.subst" logEvery="2500" mode="tree">
        <log id="SubstitutionTreeWithMetaDataLogger" spec="beast.base.evolution.TreeWithMetaDataLogger" substitutions="true" branchratemodel="@flcBranchRates" tree="@Tree"/>
     </logger>
     <operatorschedule id="OperatorSchedule" spec="OperatorSchedule"/>
