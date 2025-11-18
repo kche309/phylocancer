@@ -1,0 +1,2 @@
+logs/CRC13_no_singletons_recode_burnin_removed.log filter=lfs diff=lfs merge=lfs -text
+trees/CRC13_no_singletons_recode_burnin_removed.trees filter=lfs diff=lfs merge=lfs -text

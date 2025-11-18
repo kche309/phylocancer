@@ -16,3 +16,5 @@ phylogenetic_dating/logs/CRC14_no_singletons_recode_unconstrained.log filter=lfs
 phylogenetic_dating/trees/CRC14_no_singletons_recode_unconstrained.trees filter=lfs diff=lfs merge=lfs -text
 phylogenetic_dating/logs/CRC09_no_singletons_recode_unconstrained.log filter=lfs diff=lfs merge=lfs -text
 phylogenetic_dating/trees/CRC09_no_singletons_recode_unconstrained.trees filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/trees/CRC09_no_singletons_recode_burnin_removed.trees filter=lfs diff=lfs merge=lfs -text
+phylogenetic_dating/logs/CRC09_no_singletons_recode_burnin_removed.log filter=lfs diff=lfs merge=lfs -text
