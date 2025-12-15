@@ -1,5 +1,5 @@
 # phylocancer
-The phylocancer repository contains code and data for performing phylogenetic inference using single-cell DNA data of colorectal cancer patients. We use the BEAST2 and BEAGLE software for evolutionary inference. This guide includes a complete list software requirements, installation, and usage instructions. We also include a demo and show example usage on our datasets. 
+The phylocancer repository contains code and data for performing phylogenetic inference using single-cell DNA data of colorectal cancer patients. We use the BEAST2 and BEAGLE software for evolutionary inference. These frameworks use Markov chain Monte Carlo (MCMC) to sample likely phylogenetic trees. This guide includes a complete list software requirements, installation, and usage instructions. We also include a demo and show example usage on our datasets. 
 
 ## Hardware requirements
 `BEAST2` and `Beagle` can run on any standard machine with sufficient RAM. 
@@ -92,6 +92,8 @@ phylocancer/phylogeography_migration/xmls
 
 Then run BEAST2 either using the GUI or command-line. 
 
+Please note: Large datasets may require 1 or more weeks to reach convergence depending on your computing resources. The resume option in beast (`-resume` for command-line) can be used to resume long running analyses. 
+
 ### Run using BEAST2 GUI
 * For `Input file`, select the XML for the analysis you want to run.
 * Press `Run` to start running the analyses. 
@@ -135,6 +137,18 @@ beast <beast.xml>
 ```
 ./beast -beagle_GPU <beast.xml>
 ```
+
+### Analysis of output 
+Log files: 
+Log files can be analyzed using Tracer, which is a standalone tool available at https://www.beast2.org/tracer-2/ 
+
+CCD0 Summary trees: 
+To estimate summary trees from the BEAST2 results, we use the CCD0 metric. 
+
+See this guide for CCD0 usage https://github.com/CompEvol/CCD?tab=readme-ov-file#point-estimates
+
+### Output files
+For reproducibility, we uploaded the output files of our runs in `logs`, `trees` and `CCD0` within each subdirectory. 
 
 ## License
 BEAST2 and its packages are licensed under LGPL-2.1 (GNU Lesser General Public License), see https://github.com/CompEvol/beast2?tab=LGPL-2.1-1-ov-file#readme
