@@ -74,6 +74,11 @@ A sample demo will be provided in the `demo` subdirectory. This demo should take
 
 ## Running our datasets
 To run our datasets download the XML files from this repo: 
+* [tumor demographic analyses](https://github.com/kche309/phylocancer/tree/main/demographic_tumor/xmls)
+* [phylogenetic dating analyses](https://github.com/kche309/phylocancer/tree/main/phylogenetic_dating/xmls)
+* [phylogeographic migration analyses](https://github.com/kche309/phylocancer/tree/main/phylogeography_migration/xmls)
+
+Then run BEAST2 either using the GUI or command-line. 
 
 ### Run using BEAST2 GUI
 * For `Input file`, select the XML for the analysis you want to run.
@@ -83,7 +88,7 @@ To run our datasets download the XML files from this repo:
 
 (OPTIONAL) BEAGLE library can be checked using `Beagle Info`. 
 
-## Run using command-line
+### Run using command-line
 
 **macOS**
 
