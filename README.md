@@ -7,13 +7,14 @@ This repository contains analyses and scripts for the phylocancer paper. We list
 GPU hardware is recommended to achieve the best computational efficiency. 
 
 ## Software requirements
+### OS requirements
 This software supports Linux, macOS, and Windows. The software has been tested on the following systems:
 * macOS: Ventura (v13.5)
 * Linux: Rocky Linux v9.4 (Blue Onyx)
   
-Software requirements: 
+### Software requirements
 * BEAST2 v2.7
-* Beagle library v4.0.1
+* Beagle library v4.0.0
 
 BEAST2 packages: 
 * Phylonco v1.2.1
@@ -36,23 +37,27 @@ In Beauti, select all the required BEAST2 packages listed above, and wait a few 
 
 ### Install packages by command-line
 
-**macOS**
+**Step 1:**
+
+macOS
 ```
 cd /Applications/BEAST\ 2.7.x/bin/
 ./packagemanager -add <package name>
 ```
 
-**Linux**
+Linux
 ```
 cd ~/beast/bin/
 ./packagemanager -add <package name>
 ```
 
-**Windows**
+Windows
 ```
 cd c:\Users\BEASTUser\Desktop\BEAST\bin
 packagemanager -add <package name>
 ```
+
+**Step 2:**
 
 Install the BEAST2 packages using the `packagemanager` command: 
 ```
