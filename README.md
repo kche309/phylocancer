@@ -42,19 +42,16 @@ In Beauti, select all the required BEAST2 packages listed above, and wait a few 
 macOS
 ```
 cd /Applications/BEAST\ 2.7.x/bin/
-./packagemanager -add <package name>
 ```
 
 Linux
 ```
 cd ~/beast/bin/
-./packagemanager -add <package name>
 ```
 
 Windows
 ```
 cd c:\Users\BEASTUser\Desktop\BEAST\bin
-packagemanager -add <package name>
 ```
 
 **Step 2:**
@@ -62,7 +59,6 @@ packagemanager -add <package name>
 Install the BEAST2 packages using the `packagemanager` command: 
 ```
 ./packagemanager -add phylonco
-./packagemanager -add flc
 ./packagemanager -add flc
 ./packagemanager -add beast-classic
 ./packagemanager -add MASCOT
@@ -73,10 +69,26 @@ Install the BEAST2 packages using the `packagemanager` command:
 A sample demo will be provided in the `demo` subdirectory. This demo should take a few minutes to complete running on a standard laptop. 
 
 ## Running our datasets
-To run our datasets download the XML files from this repo: 
-* [tumor demographic analyses](https://github.com/kche309/phylocancer/tree/main/demographic_tumor/xmls)
-* [phylogenetic dating analyses](https://github.com/kche309/phylocancer/tree/main/phylogenetic_dating/xmls)
-* [phylogeographic migration analyses](https://github.com/kche309/phylocancer/tree/main/phylogeography_migration/xmls)
+To run our datasets download the XML files from this repo:
+* tumor demographic analyses - [demographic_tumor/xmls](https://github.com/kche309/phylocancer/tree/main/demographic_tumor/xmls)
+* phylogenetic dating analyses - [phylogenetic_dating/xmls](https://github.com/kche309/phylocancer/tree/main/phylogenetic_dating/xmls)
+* phylogeographic migration analyses - [phylogeography_migration/xmls](https://github.com/kche309/phylocancer/tree/main/phylogeography_migration/xmls)
+
+To download a single file: 
+```
+Right click on XML -> "Save link as" 
+```
+
+To download ALL files in this entire repository: 
+```
+git clone https://github.com/kche309/phylocancer.git
+
+XMLs are located in these directories:
+
+phylocancer/demographic_tumor/xmls
+phylocancer/phylogenetic_dating/xmls
+phylocancer/phylogeography_migration/xmls
+```
 
 Then run BEAST2 either using the GUI or command-line. 
 
@@ -84,23 +96,21 @@ Then run BEAST2 either using the GUI or command-line.
 * For `Input file`, select the XML for the analysis you want to run.
 * Press `Run` to start running the analyses. 
 
-(OPTIONAL) If you have GPU hardware, for `Prefer use of` select "GPU". 
+(OPTIONAL) If you have GPU hardware, select GPU for the `Prefer use of` field. 
 
 (OPTIONAL) BEAGLE library can be checked using `Beagle Info`. 
 
 ### Run using command-line
+To run BEAST2 by command-line, replace `<beast.xml>` in the examples below with the path to your XML. 
+
+E.g., your path may be `~/phylocancer/demographic_tumor/xmls/CRC01_no_singletons_recode_tumour_only_PM.xml`
 
 **macOS**
 
 With Java (standard): 
 ```
 cd /Applications/BEAST\ 2.7.x/bin/
-./beast beast.xml
-```
-
-With BEAGLE (recommended): 
-```
-./beast -beagle_GPU beast.xml 
+./beast <beast.xml>
 ```
 
 **Linux**
@@ -108,12 +118,7 @@ With BEAGLE (recommended):
 With Java (standard): 
 ```
 cd ~/beast/bin/
-./beast beast.xml
-```
-
-With BEAGLE (recommended): 
-```
-./beast -beagle_GPU beast.xml
+./beast <beast.xml>
 ```
 
 **Windows**
@@ -121,12 +126,14 @@ With BEAGLE (recommended):
 With Java (standard): 
 ```
 cd c:\Users\BEASTUser\Desktop\BEAST\bin
-beast beast.xml
+beast <beast.xml>
 ```
 
-With BEAGLE (recommended): 
+**BEAGLE and GPU (recommended)**
+
+`cd` into the beast directory as above, and run `beast` with the `-beagle_GPU` option. 
 ```
-beast -beagle_GPU beast.xml
+./beast -beagle_GPU <beast.xml>
 ```
 
 ## License
