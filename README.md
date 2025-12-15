@@ -1,5 +1,5 @@
 # phylocancer
-This repository contains analyses and scripts for the phylocancer paper. We list the software requirements, and instructions on how to install and use the software below. A demo and example usage of the software on our datasets is also provided. 
+The phylocancer repository contains code and data for performing phylogenetic inference using single-cell DNA data of colorectal cancer patients. We use the BEAST2 and BEAGLE software for evolutionary inference. This guide includes a complete list software requirements, installation, and usage instructions. We also include a demo and show example usage on our datasets. 
 
 ## Hardware requirements
 `BEAST2` software and `Beagle` can run on any standard machine with sufficient RAM. 
