@@ -108,7 +108,7 @@
 	<parameter name="popSize" id="popSize" value="100." lower="0." upper="Infinity" />
 
             
-    <run spec="MCMC" id="mcmc" chainLength="100000000" >
+    <run spec="MCMC" id="mcmc" chainLength="1000000" >
     
     	<!--init spec="beast.phylogeography.RateIndicatorInitializer" id="indicatorInitialiser" substitutionModel="@svs" rateIndicator="@rateIndicator"/-->
     	
