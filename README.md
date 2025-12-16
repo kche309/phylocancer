@@ -67,6 +67,7 @@ Install the BEAST2 packages using the `packagemanager` command:
 
 ## Demo
 Sample demos are provided in the `demo` subdirectory. Each demo should take a few minutes to complete running on a standard laptop. 
+
 We will be using BEAST2 and TreeAnnotator for the demos. These applications can be found in your BEAST2 installation directory. 
 
 **1. phylonco demo**
@@ -273,6 +274,12 @@ Writing annotated tree....
 Finished - Quit program to exit.
 ```
 
+These demos are based on the example files from:
+* [phylonco](https://github.com/bioDS/beast-phylonco/blob/0b0360896a7ff61a91b5fa677aeece0d3fca7c80/examples/test_GT16_error.xml)
+* [flc](https://github.com/4ment/flc/blob/95b7b8faf11c3ca1034704c42e20280d62eeb8e4/examples/Human.H3.81-98-elc-StrictClock.xml)
+* [beast-classic](https://github.com/BEAST2-Dev/beast-classic/blob/fbab14309c15f82e5c11fcfc3ab5297660348407/examples/testDiscreteSmall.xml)
+* [MASCOT](https://github.com/BEAST2-Dev/beast-classic/blob/fbab14309c15f82e5c11fcfc3ab5297660348407/examples/testDiscreteSmall.xml)
+* [bioDS/beast-phylonco-paper](https://github.com/bioDS/beast-phylonco-paper/blob/main/sim3/beast/gt16CoalErrModel_0.trees) (CCD demo)
 
 ## Running our datasets
 To run our datasets download the XML files from this repo:
