@@ -11,6 +11,7 @@ GPU hardware is recommended to achieve the best computational efficiency.
 This software supports Linux, macOS, and Windows. The software has been tested on the following systems:
 * macOS: Ventura (v13.5)
 * Linux: Rocky Linux v9.4 (Blue Onyx)
+* Windows: Windows 11 Home
   
 ### Software requirements
 * BEAST2 v2.7
@@ -73,7 +74,7 @@ We will be using BEAST2 and TreeAnnotator for the demos. These applications can 
 **1. phylonco demo**
 * Open BEAST2, and select the file `demo/phylonco-test_GT16_error.xml`
 * Press Run
-* This will produce two files `test_GT16_error.*.log` `test_GT16_error.*.trees`
+* This will produce the files `test_GT16_error.*.log`, `test_GT16_error.*.trees`, `*.state`
 * The BEAST2 screen should display output similar to:
 ```
          Sample treeLikelihood ESS(tre_ihood)       rates.AC       rates.AG       rates.AT       rates.CG       rates.CT       rates.GT     ESS(rates)    error.delta ESS(err_delta)  error.epsilon ESS(err_silon)
@@ -109,7 +110,7 @@ End likelihood: -5198.97253464326
 **2. flc demo**
 * Open BEAST2, and select the file `demo/flc-Human.H3.81-98-elc-StrictClock.xml`
 * Press Run
-* This will produce two files `fluA-strictClock.*.log` `fluA-strictClock.*.trees`
+* This will produce the files `fluA-strictClock.*.log`, `fluA-strictClock.*.trees`, `*.state`
 * The BEAST2 screen should display output similar to:
 ```
          Sample      posterior ESS(posterior)     likelihood          prior  clockRate.old  clockRate.new
@@ -151,7 +152,7 @@ End likelihood: -4605.660185166029
 * Open BEAST2, and select the file `demo/beast-classic-testDiscreteSmall.xml`
 * For `Prefer use of` select **java**
 * Press Run
-* This will produce three files `testPhylogeo_H5N1_4taxa_*.log` `testPhylogeo_H5N1_geo_4taxa_*.log` `testPhylogeo_H5N1_4taxa_*.trees`
+* This will produce the files `testPhylogeo_H5N1_4taxa_*.log`, `testPhylogeo_H5N1_geo_4taxa_*.log`, `testPhylogeo_H5N1_4taxa_*.trees`, and `*.state`
 * The BEAST2 screen should display output similar to:
 ```
          Sample      posterior discret_tPrior coalesc_lihood treeLikelihood traited_lihood  geoclock.rate    tree.height      hky.kappa      ucld.mean     ucld.stdev     gammaShape trait(A__2005)
@@ -197,7 +198,7 @@ End likelihood: -5365.3680998722
 **4. MASCOT demo**
 * Open BEAST2, and select the file `demo/MASCOT-ZIKV.xml`
 * Press Run
-* This will produce four files `MASCOT-ZIKV.log` `MASCOT-ZIKV-sequences.trees` `MASCOT-ZIKV.sequences.trees` `MASCOT-ZIKV.sequences.events.trees`
+* This will produce the files `MASCOT-ZIKV.log`, `MASCOT-ZIKV-sequences.trees`, `MASCOT-ZIKV.sequences.trees`, `MASCOT-ZIKV.sequences.events.trees`, and `*.state`
 * The BEAST2 screen should display output similar to:
 ```
          Sample      posterior     likelihood          prior
@@ -240,11 +241,11 @@ End likelihood: -17698.051547793642
 **5. CCD demo**
 * Open TreeAnnotator
 * For `Input Tree File` select the file `demo/CCD-sim3-gt16CoalErrModel_0.trees`
-* For `Target Tree Type` select "Conditional Clade Distribution 0"
-* For `Output File` name your file `demo/demo_CCD0_output.tree`
+* For `Target Tree Type` select "MAP (CCD0)"
+* For `Output File` name your file `<your full path>/demo_CCD0_output.tree`
 * Select the `Low memory` tickbox
 * Press Run
-* This will produce the file `demo/demo_CCD0_output.tree`
+* This will produce the file `<your full path>/demo_CCD0_output.tree`
 * The TreeAnnotator screen should display:
 ```
 Processing 1801 trees from file after ignoring first 10% = 200 trees.
