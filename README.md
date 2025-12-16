@@ -14,15 +14,15 @@ This software supports Linux, macOS, and Windows. The software has been tested o
 * Windows: Windows 11 Home
   
 ### Software requirements
-* BEAST2 v2.7
-* Beagle library v4.0.0
+* BEAST2 v2.7 [github](https://github.com/CompEvol/beast2)
+* Beagle library v4.0.0 [github](https://github.com/beagle-dev/beagle-lib)
 
 BEAST2 packages: 
-* Phylonco v1.2.1
-* FLC v1.2.0
-* beast-classic v1.6.3
-* MASCOT v3.0.7
-* CCD v1.0.0
+* Phylonco v1.2.1 [github](https://github.com/bioDS/beast-phylonco)
+* FLC v1.2.0 [github](https://github.com/4ment/flc)
+* beast-classic v1.6.3 [github](https://github.com/BEAST2-Dev/beast-classic)
+* MASCOT v3.0.7 [github](https://github.com/nicfel/Mascot)
+* CCD v1.0.0 [github](https://github.com/CompEvol/CCD)
 
 ## Installation guide
 * BEAST2 v.2.7 can be installed following instructions in https://www.beast2.org/
